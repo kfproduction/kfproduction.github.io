@@ -27,8 +27,10 @@
         .video-wrapper {
             position: relative;
             width: 100%;
-            padding-bottom: 75%; /* Увеличенное соотношение сторон */
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
+            max-width: 400px; /* Ограничение ширины */
+            margin: 0 auto; /* Центрирование */
         }
         .video-wrapper video,
         .video-wrapper iframe {
@@ -86,6 +88,7 @@
         .videos-sidebar {
             max-height: none;
             overflow-y: visible;
+            padding: 10px;
         }
     </style>
 </head>
@@ -106,7 +109,7 @@
 
     <div class="row mt-4">
         <!-- Основной контент слева -->
-        <div class="col-lg-7">
+        <div class="col-lg-6">
             <h1>О нас</h1>
             <ul>
                 <li>Скоро здесь появится контент</li>
@@ -119,7 +122,7 @@
         </div>
 
         <!-- Видео справа -->
-        <div class="col-lg-5">
+        <div class="col-lg-6">
             <div class="videos-sidebar">
                 <h5 class="mb-3">Наши видео</h5>
                 
