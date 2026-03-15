@@ -1,14 +1,32 @@
+/* Header styles */
 header {
     position: sticky;
-    top 0;
+    top: 0;
     padding: 10px;
     z-index: 1000;
-    background: #fff;
-    -wedkit-box-shadow: 0 5px 25px rgda(0, 0, 0, 0.15)
-    box-shadow: 0 5px 25px rgda(0, 0, 0, 0.15)
+    background: rgba(15, 15, 26, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
 }
 
 .header__img {
-height: 48px;
-width: 48px;
+    height: 48px;
+    width: 48px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.header__img:hover {
+    transform: scale(1.1);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    background: rgba(99, 102, 241, 0.3);
+    color: #ffffff;
 }
